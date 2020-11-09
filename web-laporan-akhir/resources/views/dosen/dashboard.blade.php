@@ -33,7 +33,7 @@
 <!-- Section Content -->
 @section('content')
 <section class="content">
-
+    
 </section>
 @endsection
 
