@@ -42,7 +42,7 @@ Push project yang telah anda buat dengan perintah
 
 `git push -u origin usernamekamu-branch`
 
-### 7. Buat Pull Request
+### 6. Buat Pull Request
 
 Buka kembali browsermu dan pergi ke repository web-kemajuan-la milikmu. Jika berhasil melakukan perubahan atau penambahan suatu file maka akan muncul tombol berikut untuk membandingkan dan membuat pull request. Klik tombol berikut.
 
