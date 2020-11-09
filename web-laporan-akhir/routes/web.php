@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/panitia', function () {
+    return view('panitia.dashboard');
+});
+
+Route::get('/', function() {
     return view('welcome');
 });
