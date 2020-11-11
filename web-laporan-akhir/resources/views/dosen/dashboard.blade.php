@@ -27,6 +27,68 @@
 <link rel="stylesheet" href="{{ asset('') }}assets/plugins/jqvmap/jqvmap.min.css">
 @endpush
 
+<!-- Section Sidebar -->
+@section('sidebar')
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+        <li class="nav-item has-treeview">
+            <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                    Laporan
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-list nav-icon"></i>
+                        <p>Data Judul</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-address-book nav-icon"></i>
+                        <p>Data Mahasiswa</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-calendar nav-icon"></i>
+                        <p>Log</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item has-treeview">
+            <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-comments"></i>
+                <p>
+                    Mailbox
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-plus-square nav-icon"></i>
+                        <p>Create Mailbox</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-envelope nav-icon"></i>
+                        <p>Data Mailbox</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+@endsection
+
 <!-- Section Breadcrumb -->
 @section('breadcrumb-title', 'Dashboard Dosen')
 
