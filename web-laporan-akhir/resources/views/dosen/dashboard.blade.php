@@ -95,7 +95,26 @@
 <!-- Section Content -->
 @section('content')
 <section class="content">
-    
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr style="text-align: center;">
+                <th>No</th>
+                <th>Nama Mahasiswa</th>
+                <th>Nama Dosen</th>
+                <th>Judul</th>
+            </<tr>
+        </thead>
+        <tbody>
+            @foreach($laporan as $laporan)
+            <tr>
+                <td>{{$laporan->id_laporan}}</td>
+                <td>{{$laporan->nama_mahasiswa}}</td>
+                <td>{{$laporan->nama_dosen}}</td>
+                <td>{{$laporan->judul}}</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
 </section>
 @endsection
 

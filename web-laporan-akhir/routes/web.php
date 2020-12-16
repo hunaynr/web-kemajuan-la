@@ -36,9 +36,7 @@ Route::get('/mahasiswa', function () {
 | Route untuk Dosen
 |--------------------------------------------------------------------------
 */
-Route::get('/dosen', function () {
-    return view('dosen.dashboard');
-});
+Route::get('/dosen', 'App\Http\Controllers\DosenController@index')->middleware('auth')->name('dashboarddosen');
 
 
 /*
@@ -49,3 +47,6 @@ Route::get('/dosen', function () {
 Route::get('/', function() {
     return view('welcome');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
